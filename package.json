@@ -48,15 +48,17 @@
 		"redux-localstorage-simple": "^2.1.6",
 		"redux-multilanguage": "^0.1.2",
 		"redux-thunk": "^2.3.0",
+		"serve": "^11.3.2",
 		"swiper": "^5.2.0",
 		"uuid": "^3.3.3"
 	},
 	"scripts": {
 		"dev": "chmod +x ./env.sh && ./env.sh && cp env-config.js ./public/ && react-scripts start",
-		"start": "react-scripts start",
+		"start": "serve -s build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"st": "react-scripts start"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
